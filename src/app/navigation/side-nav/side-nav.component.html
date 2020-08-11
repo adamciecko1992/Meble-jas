@@ -1,0 +1,10 @@
+<button>Click</button>
+<nav class="SideNav px-3">     
+        <ul >
+            <li *ngFor="let NavLink of NavLinks" class="SideNav__Item orange darken-2">
+                <a [routerLink]="NavLink.href" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">{{NavLink.name}}</a>
+            </li>
+        </ul>
+</nav>
+  
+  

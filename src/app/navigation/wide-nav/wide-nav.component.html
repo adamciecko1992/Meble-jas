@@ -1,0 +1,11 @@
+<nav class="wideNav px-3 orange darken-2">
+  <div class="container ">
+    <div class="nav-wrapper row">
+      <a href="#" class="brand-logo">Meble Jaś</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li *ngFor="let NavLink of NavLinks"><a [routerLink]="NavLink.href" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">{{NavLink.name}}</a></li>
+      </ul>
+    </div>
+    </div>
+</nav>
+

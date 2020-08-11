@@ -1,0 +1,11 @@
+.wideNav {
+  position: fixed;
+
+  width: 100%;
+  &__logo {
+    object-fit: cover;
+  }
+}
+.active {
+  background-color: red;
+}

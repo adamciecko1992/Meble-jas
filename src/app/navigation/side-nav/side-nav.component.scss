@@ -1,0 +1,27 @@
+.SideNav {
+  position: fixed;
+  visibility: hidden;
+
+  display: block;
+  width: 75%;
+  height: 100vh;
+  &__Item {
+    width: 100%;
+  }
+}
+.active {
+  background-color: red;
+}
+
+@media (max-width: 994px) {
+  .SideNav {
+    visibility: visible;
+    top: 64px;
+  }
+}
+@media (max-width: 600px) {
+  .SideNav {
+    visibility: visible;
+    top: 56px;
+  }
+}
