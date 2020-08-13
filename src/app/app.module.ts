@@ -4,6 +4,7 @@ import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { ReactiveFormsModule } from "@angular/forms";
+
 //pages
 import { HomeModule } from "./pages/home/home.module";
 import { ContactModule } from "./pages/contact/contact.module";
@@ -16,6 +17,7 @@ import { NavigationModule } from "./navigation/navigation.module";
 //components
 import { HeaderComponent } from "./layout/header/header.component";
 import { UiModule } from "./ui/ui.module";
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [AppComponent, HeaderComponent, Page404Component],
@@ -31,6 +33,7 @@ import { UiModule } from "./ui/ui.module";
     BrowserAnimationsModule,
     UiModule,
     NavigationModule,
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,9 +1,9 @@
 .SideNav {
   position: fixed;
   visibility: hidden;
-
+  z-index: 3;
   display: block;
-  width: 75%;
+  width: 60%;
   height: 100vh;
   &__Item {
     width: 100%;
@@ -12,8 +12,24 @@
 .active {
   background-color: red;
 }
-
+.toggle{
+  display: none;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  width: 4rem;
+  height: 4rem;
+  color: white;
+  font-size: 1.5rem;
+}
 @media (max-width: 994px) {
+  .toggle{
+    display: block;
+    position: fixed;
+    top: 5px;
+    z-index: 10;
+
+  }
   .SideNav {
     visibility: visible;
     top: 64px;
@@ -23,5 +39,8 @@
   .SideNav {
     visibility: visible;
     top: 56px;
+  }
+  .toggle{
+    top: 0;
   }
 }

@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "meble-jas"
+  "defaultProject": "meble-jas",
+  "cli": {
+    "analytics": "2b6b41bf-539b-401b-9e3d-366397380aae"
+  }
 }

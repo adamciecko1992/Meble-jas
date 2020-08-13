@@ -6,7 +6,7 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./navigation.component.scss"],
 })
 export class NavigationComponent implements OnInit {
-  constructor() {}
+  constructor() { }
   links = [
     { name: "O firmie", href: "" },
     { name: "Oferty", href: "offers" },
@@ -14,5 +14,11 @@ export class NavigationComponent implements OnInit {
     { name: "Galeria", href: "gallery" },
     { name: "Kontakt", href: "contact" },
   ];
-  ngOnInit(): void {}
+  sideNavVisible = false;
+  toggleSideBar = (event) => {
+    // event.stopPropagation();
+    this.sideNavVisible = !this.sideNavVisible
+  }
+
+  ngOnInit(): void { }
 }
