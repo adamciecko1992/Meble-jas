@@ -1,0 +1,67 @@
+@import "../../../../styles/variables.scss";
+// @import "~@angular/material/theming";
+:host {
+  min-height: 200vh;
+}
+
+.Main {
+  width: 100%;
+  min-height: 80vh;
+  position: relative;
+
+  &__Header {
+    margin-top: 12rem;
+    font-family: "Yeseva One";
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 5rem;
+    color: white;
+    padding-bottom: 10px;
+  }
+  &__SubHeader {
+    color: white;
+  }
+
+  &__Button {
+    position: absolute;
+    bottom: 12rem;
+    right: 50%;
+    transform: translateX(50%);
+    width: 10rem;
+    height: 4rem;
+  }
+}
+
+.background {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(black, 0.5),
+      rgba(black, 0.12)
+    ),
+    url(/assets/img/hero.jpg);
+  background-size: cover;
+  background-position: 0% 80%;
+}
+
+@media (max-width: 600px) {
+  .Main {
+    &__Header {
+      margin-top: 6rem;
+      box-shadow: 0px 7px 0px 0px $primary;
+    }
+    &__Button {
+      bottom: 7rem;
+    }
+  }
+
+  .background {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(black, 0.6),
+        rgba(black, 0.12)
+      ),
+      url(/assets/img/hero.jpg);
+    background-size: cover;
+    background-position: 0% 80%;
+  }
+}

@@ -3,5 +3,7 @@
   min-height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: bottom;
   z-index: -1;
+  background-attachment: static;
 }

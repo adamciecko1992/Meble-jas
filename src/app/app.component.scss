@@ -1,3 +1,10 @@
 .pages {
-  padding-top: 60px;
+  padding-top: 65px;
+  min-height: 200vh;
+}
+
+@media (max-width: 600px) {
+  .pages {
+    padding-top: 58px;
+  }
 }

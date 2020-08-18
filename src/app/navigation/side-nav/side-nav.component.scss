@@ -10,9 +10,11 @@
   }
 }
 .active {
-  background-color: red;
+  background-color: #ff9800;
+  color: white !important;
 }
-.toggle{
+
+.toggle {
   display: none;
   outline: none;
   border: none;
@@ -23,12 +25,11 @@
   font-size: 1.5rem;
 }
 @media (max-width: 994px) {
-  .toggle{
+  .toggle {
     display: block;
     position: fixed;
     top: 5px;
     z-index: 10;
-
   }
   .SideNav {
     visibility: visible;
@@ -40,7 +41,7 @@
     visibility: visible;
     top: 56px;
   }
-  .toggle{
+  .toggle {
     top: 0;
   }
 }

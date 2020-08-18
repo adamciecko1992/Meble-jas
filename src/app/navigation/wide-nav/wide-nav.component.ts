@@ -9,7 +9,7 @@ import { NavLink } from "../models";
 })
 export class WideNavComponent implements OnInit {
   @Input() NavLinks: NavLink[];
-
+  logourl = "/assets/img/noweLogo.svg";
   constructor() {}
 
   ngOnInit(): void {}
