@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { WindowScrollService } from "../../../services/scroll/scroll.service";
 
 @Component({
   selector: "app-home-page",
@@ -6,7 +7,13 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./home-page.component.scss"],
 })
 export class HomePageComponent implements OnInit {
-  constructor() {}
+  offset: number;
 
-  ngOnInit(): void {}
+  constructor(private scroll: WindowScrollService) {}
+
+  ngOnInit(): void {
+    this.scroll.scroll$.subscribe((val) => {
+      this.offset = val;
+    });
+  }
 }

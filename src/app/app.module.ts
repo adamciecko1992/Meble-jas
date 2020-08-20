@@ -17,7 +17,10 @@ import { NavigationModule } from "./navigation/navigation.module";
 //components
 import { HeaderComponent } from "./layout/header/header.component";
 import { UiModule } from "./ui/ui.module";
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
+
+//services
+import { WindowScrollService } from "./services/scroll/scroll.service";
 
 @NgModule({
   declarations: [AppComponent, HeaderComponent, Page404Component],
@@ -35,7 +38,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     NavigationModule,
     FontAwesomeModule,
   ],
-  providers: [],
+  providers: [WindowScrollService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

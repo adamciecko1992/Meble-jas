@@ -12,7 +12,6 @@ export class NavigationComponent implements OnInit {
       .observe([
         Breakpoints.HandsetLandscape,
         Breakpoints.HandsetPortrait,
-
         "(max-width: 966px)",
       ])
       .subscribe((result) => {
