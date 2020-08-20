@@ -3,6 +3,6 @@
 <div *ngIf="sideNavVisible">
     <app-side-nav [NavLinks]="links" (linkClicked)="toggleSideBar()">
     </app-side-nav>
-    <app-backdrop (backdropClicked)="toggleSideBar() ">
+    <app-backdrop (backdropClicked)="toggleSideBar()" >
     </app-backdrop>
 </div>
