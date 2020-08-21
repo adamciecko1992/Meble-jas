@@ -17,5 +17,15 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
+body {
+  font-size: 16px;
+}
+
 @import "materialize-css/sass/materialize.scss";
 @import "./styles/utilities/utilities";
+
+@media (max-width: 600px) {
+  :root {
+    font-size: 70%;
+  }
+}

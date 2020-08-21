@@ -18,7 +18,7 @@ export class TranslateOnScrollDirective {
     this.scroll.scroll$.subscribe((val) => {
       this.offset = val;
       let transform =
-        (this.activationPoint - this.offset - this.width / 100) / 4;
+        (this.activationPoint - this.offset - this.width / 100) / 3;
       if (transform > 0) {
         this.element.nativeElement.style.transform = `translateX(${transform}%)`;
       }
@@ -31,7 +31,7 @@ export class TranslateOnScrollDirective {
   ngOnInit(): void {
     this.elementTop = this.element.nativeElement.getBoundingClientRect().top;
     this.width = this.element.nativeElement.getClientRects()[0].width;
-    this.activationPoint = this.elementTop - this.width / 4;
+    this.activationPoint = this.elementTop - this.width / 3;
     this.element.nativeElement.style.transform = `translateX(${this.width}px)`;
   }
   ngOnChanges() {}
