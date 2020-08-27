@@ -11,7 +11,7 @@
 
   &__Header {
     padding: 20px 0;
-    text-align: center;
+    text-align: left;
 
     &__Heading {
       display: inline-block;
@@ -31,11 +31,25 @@
     }
   }
 
+  &__Image {
+    height: 30%;
+    min-height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 3rem;
+
+
+
+
+
+    img {
+      width: auto;
+      max-width: 100%;
+      height: auto;
+      max-height: 100%;
+
+    }
+  }
 
 }
-
-// @media(max-width:600px) {
-//   .Section {
-//     min-height: vh;
-//   }
-// }

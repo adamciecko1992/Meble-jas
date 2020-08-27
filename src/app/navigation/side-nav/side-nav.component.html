@@ -1,8 +1,8 @@
-<nav class="SideNav px-3 grey lighten-5 black-text">
+<nav class="SideNav px-3 grey lighten-5 black-text" [@openMenu]="sideNavVisible?'open':'closed'">
   <ul>
     <li *ngFor="let NavLink of NavLinks" class="SideNav__Item grey lighten-5 black-text">
       <a [routerLink]="NavLink.href" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
-         class="black-text">{{ NavLink.name }}</a>
+        class="black-text">{{ NavLink.name }}</a>
     </li>
   </ul>
 </nav>

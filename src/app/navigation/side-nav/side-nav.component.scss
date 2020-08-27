@@ -1,14 +1,16 @@
 .SideNav {
   position: fixed;
-  // visibility: hidden;
+  overflow: hidden;
   z-index: 3;
   display: block;
   width: 60%;
   height: 100vh;
+
   &__Item {
     width: 100%;
   }
 }
+
 .active {
   background-color: #ff9800;
   color: white !important;
@@ -24,6 +26,7 @@
   color: white;
   font-size: 1.5rem;
 }
+
 @media (max-width: 994px) {
   .toggle {
     display: block;
@@ -31,16 +34,19 @@
     top: 5px;
     z-index: 10;
   }
+
   .SideNav {
     visibility: visible;
     top: 64px;
   }
 }
+
 @media (max-width: 600px) {
   .SideNav {
     visibility: visible;
     top: 56px;
   }
+
   .toggle {
     top: 0;
   }

@@ -1,7 +1,5 @@
 <section class="container-fluid Section">
-
   <div class="container">
-
     <header class="Section__Header">
       <h1 class="Section__Header__Heading">
         <ng-content select="header"></ng-content>
@@ -10,6 +8,8 @@
     <article class="Section__Content">
       <ng-content select="content"></ng-content>
     </article>
+    <div class="Section__Image">
+      <img [src]="imgUrl" alt="">
+    </div>
   </div>
-
 </section>
