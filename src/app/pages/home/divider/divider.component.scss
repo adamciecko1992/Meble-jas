@@ -1,0 +1,31 @@
+.divider {
+  display: flex;
+  width: 100%;
+  height: 5rem;
+  background-color: transparent;
+  position: relative;
+  margin-top: 30vh;
+
+
+
+  .leftSlider {
+    width: 52%;
+    height: 100%;
+    background-image: url("https://www.cersanit.com.pl/gfx/opoczno/_thumbs/pl/produktyoferta/562/alaya_wood_glossy_198x598_a_300dpi,qnuMpq2lq3GXrsaOZ6Q.jpg");
+    clip-path: polygon(0% 0%, 100% 0%, 95% 100%, 0% 100%);
+    position: absolute;
+    left: 0;
+    box-shadow: 0px 0px 20px 2px;
+  }
+
+  .rightSlider {
+    width: 52%;
+    clip-path: polygon(5% 0%, 100% 0%, 100% 100%, 0% 100%);
+    height: 100%;
+    background-size: 120%;
+    background-image: url("https://www.cersanit.com.pl/gfx/opoczno/_thumbs/pl/produktyoferta/562/alaya_wood_glossy_198x598_a_300dpi,qnuMpq2lq3GXrsaOZ6Q.jpg");
+    position: absolute;
+    right: 0;
+    box-shadow: 0px 0px 20px 2px;
+  }
+}

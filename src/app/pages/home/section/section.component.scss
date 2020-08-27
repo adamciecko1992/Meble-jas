@@ -1,0 +1,41 @@
+@import "../../../../styles/variables.scss";
+
+.Section {
+  min-height: 80vh;
+  background: linear-gradient(120deg,
+      rgba(248, 245, 250, 1) 0%,
+      rgba(255, 252, 251, 1) 50%,
+      rgba(207, 207, 207, 1) 100%);
+  transition: all 0.5s;
+  padding-bottom: 5rem;
+
+  &__Header {
+    padding: 20px 0;
+    text-align: center;
+
+    &__Heading {
+      display: inline-block;
+      padding-bottom: 1rem;
+      margin-top: 2rem;
+      font-size: 2rem;
+      border-bottom: 2px solid $primary;
+    }
+  }
+
+  &__Content {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+
+    p:not(:first-of-type) {
+      margin-top: 5rem;
+    }
+  }
+
+
+}
+
+// @media(max-width:600px) {
+//   .Section {
+//     min-height: vh;
+//   }
+// }

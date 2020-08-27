@@ -12,6 +12,7 @@ html,
 body {
   height: 100%;
 }
+
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
@@ -23,9 +24,11 @@ body {
 
 @import "materialize-css/sass/materialize.scss";
 @import "./styles/utilities/utilities";
+@import "./styles/variables.scss";
 
 @media (max-width: 600px) {
   :root {
     font-size: 70%;
+    color: $secondary;
   }
 }

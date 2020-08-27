@@ -23,7 +23,7 @@ export class HeroComponent implements OnInit, OnChanges {
     this.offset = this.title.nativeElement.getClientRects();
   }
   ngOnChanges() {
-    this.title.nativeElement.style.transform = `translateX(${this.scroll}px)`;
-    this.subtitle.nativeElement.style.transform = `translateX(${this.scroll}px)`;
+    // this.title.nativeElement.style.transform = `translateX(${this.scroll}px)`;
+    // this.subtitle.nativeElement.style.transform = `translateX(${this.scroll}px)`;
   }
 }
